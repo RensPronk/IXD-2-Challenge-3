@@ -1,0 +1,124 @@
+body { 
+		margin: 10px;
+		padding: 10px;
+		background-color: steelblue;
+		min-width: 600px;
+}
+
+
+#map {  	 /*The mapbox map*/
+	height: 70% ; width: 80%;
+	display: block;
+  	position: absolute;
+  	top:50%;
+  	left:50%;
+  	margin-top: -20%;
+  	margin-left: -40%;
+	display: block;
+	min-width: 200px;
+	min-height: 300px;
+}
+
+#Title { /*The Title on top off the page.*/
+	font-family: 'helvetica';
+	display: block;
+	text-align: center;
+  	position: absolute;
+ 	top:10%;
+  	left:50%;
+  	margin-top: -4%;
+  	margin-left: -40%;
+	display: block;
+	width: 80%;
+	min-width: 200px;
+}
+
+#LandingSpot { /*The location on the bottom of the page*/
+	font-family: 'helvetica';
+	font-size: 40px;
+	display: block;
+	text-align: center;
+  	position: absolute;
+ 	top:95%;
+  	left:50%;
+  	margin-top: -4%;
+  	margin-left: -40%;
+	display: block;
+	width: 80%;
+	min-width: 200px;
+}
+
+
+
+
+@media only screen and (max-width:1400px){ /*Changes the CSS if the page is under 1400px wide*/
+
+#map {  	
+	height: 60% ; width: 70%;
+  	margin-top: -25%;
+  	margin-left: -35%;
+
+}
+
+#LandingSpot {
+  	margin-top: -10%;
+}
+
+	}
+
+
+@media only screen and (max-width:900px){ /*Changes the CSS if the page is under 900px wide*/
+
+#map {  	
+	height: 60% ; width: 60%;
+  	margin-top: -35%;
+  	margin-left: -30%;
+
+}
+
+#Title {
+	font-size: 24px;
+ 	top:10%;
+  	left:50%;
+  	margin-top: -4%;
+  	margin-left: -40%;
+}
+
+#LandingSpot {
+	font-size: 24px;
+ 	top:95%;
+  	left:50%;
+  	margin-top: -10%;
+  	margin-left: -40%;
+}
+
+	}
+
+@media only screen and (max-width:600px){ /*Changes the CSS if the page is under 1400px wide*/
+
+#map {  	
+	height: 40%;
+	width: 60%;
+  	margin-top: 0;
+  	margin-left: -30%;
+  	top:300px;
+
+}
+
+#Title {
+	font-size: 24px;
+ 	top:10%;
+  	left:50%;
+  	margin-top: -4%;
+  	margin-left: -40%;
+}
+
+#LandingSpot {
+	font-size: 24px;
+ 	top:95%;
+  	left:50%;
+  	margin-top: -10%;
+  	margin-left: -40%;
+}
+
+	}
