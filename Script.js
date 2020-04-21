@@ -6,7 +6,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmVuc3Byb25rIiwiYSI6ImNrOHp0YWx2dzFrc2IzaHM3a
 		async function ISSlocation() { //make the function to fetch the data from the api URL
 			const response = await fetch(ISSurl);
 			const data = await response.json();
-			const { latitude, longitude } = data; 
+			const { latitude, longitude, altitude, velocity, visibility } = data; // It will fetch the following values from the API
 
 	var map = new mapboxgl.Map({ //create the mapbox map
 		container: 'map',
@@ -53,10 +53,17 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmVuc3Byb25rIiwiYSI6ImNrOHp0YWx2dzFrc2IzaHM3a
 });
 
 		// map.setView([latitude,longitude], 1);
-		document.getElementById('lat').textContent = latitude.toFixed(2); //on the bottom it will display the Latitude rounded up to 2 decimals.
-		document.getElementById('lon').textContent = longitude.toFixed(2); //on the bottom it will display the Longitude rounded up to 2 decimals.
-		console.log(data.latitude); //it will write the lat and log to the console for troubleshooting.
+		document.getElementById('lat').textContent = latitude.toFixed(2); //These are the data it will display on the page rounded up to 2 decimals.
+		document.getElementById('lon').textContent = longitude.toFixed(2);
+		document.getElementById('alt').textContent = altitude.toFixed(2);
+		document.getElementById('vel').textContent = velocity.toFixed(2);
+		document.getElementById('vis').textContent = visibility;
+
+		console.log(data.latitude); //it will write the data to the console for troubleshooting.
 		console.log(data.longitude);
+		console.log(data.altitude);
+		console.log(data.velocity);
+		console.log(data.visibility);
 	}
 
 

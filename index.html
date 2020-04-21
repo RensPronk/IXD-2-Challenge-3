@@ -11,18 +11,32 @@
 
 </head>
 
-<body>
-    <div id="map"></div>
-    <h1 id="Title"> What's the best landing spot?</h1>
+ <body id='page'>  
+        <section class="container">
+            <section id="LandingSpot">
+                    <div id="map"></div>
+            </section>
 
- 
 
-    <p id="LandingSpot"> 
-    The best landing spot is at: 
+             <section id="barchartSnelheid">
+                <canvas id="sneheid"></canvas>
+            </section>
+
+            <section id="Spacex">
+
+                    <img src="Spacex dashboard4.png" alt="Spacex">
+
+            </section>
+    <p id="position"> 
+    <div id="lati"> Latitude: <span id="lat"></span>°</div>
     <br/>
-    Latitude: <span id="lat"></span>°
-    
-    Longitude: <span id="lon"></span>°
+    <div id="long">Longitude: <span id="lon"></span>°</div>
+    <br>
+    <div id="alti">Altitude: <span id="alt"></span>°</div>
+    <br>
+    <div id="velo">Velocity: <span id="vel"></span> km/h</div>
+    <br>
+    <div id="visi">Visibility: <span id="vis"></span></div>
     </p>
  
 </body>
