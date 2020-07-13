@@ -12,7 +12,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmVuc3Byb25rIiwiYSI6ImNrOHp0YWx2dzFrc2IzaHM3a
 	var map = new mapboxgl.Map({ //create the mapbox map
 		container: 'map',
 		style: 'mapbox://styles/mapbox/streets-v11',
-		center: [latitude, longitude], // startin position off the map. Due to the API being unstable it won't always let you see the Lat and Long so choose one of them and give the other one a value.
+		center: [latitude, 0], // startin position off the map. Due to the API being unstable it won't always let you see the Lat and Long so choose one of them and give the other one a value.
 		zoom: 2 //zoomlevel off the map.
 	});
  
