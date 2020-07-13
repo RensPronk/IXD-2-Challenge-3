@@ -1,0 +1,267 @@
+body { 
+		margin: 10px;
+		padding: 10px;
+		background-color: steelblue;
+		min-width: 480px;
+}
+
+#page {
+		height: 800px;
+}
+
+
+#map {  	 /*The generated mapbox map*/
+  height: 100% !important;
+  width: 100% !important;
+
+}
+
+body {
+		font-family: 'helvetica';
+	text-align: left;
+	font-size: 24px;
+	margin:auto;
+	margin-left: 0px;
+}
+
+#LandingSpot { /*The map*/
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 9;
+}
+
+#lati {
+
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+#long {
+
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+
+#alti {
+
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#velo {
+
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 7;
+	grid-row-end: 7;
+}
+
+#visi {
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 8;
+	grid-row-end: 9;
+}
+
+#Spacex {
+	margin:auto;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+#Spacex img {
+	align-content: center;
+	width: 100%;
+	margin-left: 0px;
+}
+
+
+.container { /* The grid for the page */
+	display: grid;
+	height: 100%;
+	grid-template-columns: 5% 20% 70% 5%;
+	grid-template-rows: 4.5% 13% 13% 13% 13% 13% 13% 13% 4.5%;
+	background-color: #F0F8FF	;
+	position:relative;
+	margin: auto;
+	min-width:330px;
+	max-width:1500px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:900px){ /*Changes the CSS if the page is under 900px wide*/
+
+
+#LandingSpot {
+
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 6;
+}
+.container {
+
+	grid-template-columns: 5% 45% 45% 5%;
+
+}
+
+#lati {
+	font-size: 22px;
+	margin-top:  10px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#long {
+	font-size: 22px;
+	margin-top:  10px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 8;
+	grid-row-end: 9;
+}
+
+#alti {
+	font-size: 22px;
+	margin-top:  10px;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#velo {
+	font-size: 22px;
+	margin-top:  10px;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#visi {
+	font-size: 22px;
+	margin-top:  10px;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 8;
+	grid-row-end: 9;
+}
+
+#Spacex {
+	margin:auto;
+	margin-left: 0px;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+	}
+
+@media only screen and (max-width:1350px){ /*Changes the CSS if the page is under 1350px wide*/
+
+.container {
+	grid-template-columns: 5% 30% 60% 5%;
+	grid-template-rows: 4.5% 13% 13% 13% 13% 13% 13% 13% 4.5%;
+}
+
+	}
+
+	@media only screen and (max-width:600px){ /*Changes the CSS if the page is under 600px wide*/
+
+
+#LandingSpot { 
+
+	grid-column-start: 2;
+	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.container {
+
+	grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
+	grid-template-rows: 3% 50% 14% 6% 6% 6% 6% 6% 3%;
+
+}
+
+#lati {
+
+	font-size: 22px;
+
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+#long {
+	font-size: 22px;
+
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+
+#alti {
+	font-size: 22px;
+
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#velo {
+	font-size: 22px;
+
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#visi {
+	font-size: 22px;
+
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 8;
+	grid-row-end: 9;
+}
+
+#Spacex {
+	margin:auto;
+	margin-left: 0px;
+
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+}
+	}
