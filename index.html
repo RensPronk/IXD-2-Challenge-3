@@ -5,32 +5,28 @@
 <title>Locate the user</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
-<script type="text/javascript" src="Script.js"></script>
-<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css">
-<link rel="stylesheet" href="Styling.css"/>
+
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css"> <!-- The mapbox api -->
+<link rel="stylesheet" href="css/styling.css"/>
 
 </head>
 
- <body id='page'>  
-        <section class="container">
-            <section id="LandingSpot">
+ <body id='page'>  <!-- The page -->
+        <section class="container"> <!-- the container for the content -->
+            <section id="LandingSpot"> <!-- The map -->
                     <div id="map"></div>
             </section>
 
-
-             <section id="barchartSnelheid">
-                <canvas id="sneheid"></canvas>
-            </section>
-
             <section id="Spacex">
-
-                    <img src="Images/Spacex dashboard4.png" alt="Spacex">
-
+                    <img src="Images/Spacex dashboard4.png" alt="Spacex"> <!-- The SpaceX logo -->
             </section>
-    <p id="position"> 
-    <div id="lati"> Latitude: <span id="lat"></span>°</div>
+
+
+
+    <p id="position">  <!-- The data -->
+    <div id="lati"> Latitude: <span id="lat"></span>&deg</div>
     <br/>
-    <div id="long">Longitude: <span id="lon"></span>°</div>
+    <div id="long">Longitude: <span id="lon"></span>&deg</div>
     <br>
     <div id="alti">Altitude: <span id="alt"></span> m</div>
     <br>
@@ -38,6 +34,8 @@
     <br>
     <div id="visi">Visibility: <span id="vis"></span></div>
     </p>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
  
 </body>
 </html>
