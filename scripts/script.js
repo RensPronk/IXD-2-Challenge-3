@@ -2,9 +2,9 @@
 
 mapboxgl.accessToken = 'pk.eyJ1IjoicmVuc3Byb25rIiwiYSI6ImNrOHp0YWx2dzFrc2IzaHM3aHB2dmNwcHoifQ._6TFivpXT2bIr3a3-pOUsQ'; //Token to use the mapbox api
 
-		
+		const ISSurl = 'https://api.wheretheiss.at/v1/satellites/25544'; //create a const from the api URL
 		async function ISSlocation() { //make the function to fetch the data from the api URL
-			const ISSurl = 'https://api.wheretheiss.at/v1/satellites/25544'; //create a const from the api URL
+			
 			const response = await fetch(ISSurl);
 			const data = await response.json();
 			const { latitude, longitude, altitude, velocity, visibility } = data; // It will fetch the following values from the API
